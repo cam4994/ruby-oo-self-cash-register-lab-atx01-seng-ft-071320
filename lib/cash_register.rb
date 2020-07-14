@@ -13,6 +13,7 @@ class CashRegister
       self.items.push(title)
     end 
     self.total += (price * quantity)
+    self.last_price = (price * quantity).to_f 
   end 
   
   def apply_discount
